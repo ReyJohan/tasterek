@@ -8,7 +8,7 @@ const restaurantes = [
 ];
 
 
-const HomeScreen = ({ navigation }) => {
+const RestaurantList = ({ navigation }) => {
   const handleRestaurantPress = (restaurant) => {
     navigation.navigate('Restaurante', restaurant);
   };
@@ -38,7 +38,9 @@ const HomeScreen = ({ navigation }) => {
           </TouchableOpacity>
         ))}
 
-        <TouchableOpacity style={{ backgroundColor: '#2196F3', padding: 15, borderRadius: 10 }} onPress={handleAvailabilityPress}>
+        <TouchableOpacity style={{ backgroundColor: '#2196F3', padding: 15, borderRadius: 10 }}>
+        {/* onPress={handleAvailabilityPress} */}
+
           <Text style={{ color: '#fff', textAlign: 'center', fontSize: 18 }}>Consultar Disponibilidad</Text>
         </TouchableOpacity>
       </View>
@@ -46,4 +48,4 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-export default HomeScreen;
+export default RestaurantList;

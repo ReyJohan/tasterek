@@ -6,8 +6,8 @@ const Elcorral = () => {
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text style={{fontSize: '40px'}}>El Corral</Text>
       <Image
-        source={require('../assets/imgs/corral.jpg')}
-        style={{ width: 500, height: 500 }}
+        source={require('../assets/images/corral.jpg')}
+        // style={{ width: 500, height: 500 }}
       />
     </View>
   );
